@@ -1,0 +1,20 @@
+.container {
+  width: 65%;
+  height: 800px;
+  border: 2px black solid;
+}
+.left-panel{
+  float: left;
+  border-right: 3px black solid;
+  height:100%;
+}
+.right-panel {
+  text-align: center;margin: 30px 10px;
+}
+.search-container{
+  height:50px;
+  margin:30px 20px;
+}
+.urls-container {
+  border-top: 3px black solid;
+}

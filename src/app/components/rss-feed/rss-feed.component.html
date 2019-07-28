@@ -1,0 +1,7 @@
+<h1>{{url}}</h1>
+<div class="feed-container">
+  <p-progressSpinner  [style]="{width: '100px', height: '100px'}" *ngIf="feeds && !feeds.length"></p-progressSpinner>
+  <p-card *ngFor="let feed of feeds" header="{{feed.title}}" subheader="{{feed.pubDate | date: 'dd/MM/yyyy'}}" [style]="{width: '500px', margin:'30px'}" styleClass="ui-card-shadow">
+    <div [innerHTML]="feed.description"></div>
+  </p-card>
+</div>

@@ -1,0 +1,7 @@
+<ul class="urls">
+  <li *ngFor="let url of urls; let i = index" (click)="selectUrl(i)" [ngClass]="url.selected?'selected':''">
+    <span class="badge">{{i+1}}</span> {{url.url}}
+    <button class="delete" title="delete url"
+            (click)="delete(url)">x</button>
+  </li>
+</ul>

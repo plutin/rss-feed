@@ -1,0 +1,8 @@
+.ui-card-shadow .ui-card{
+  margin:30px;
+}
+.feed-container{
+  overflow-y: auto;
+  height:700px;
+  display: inline-block;
+}
