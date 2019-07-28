@@ -4,7 +4,7 @@ import {BehaviorSubject, Observable} from 'rxjs';
 @Injectable()
 export class DataService {
 
-  private urlSelection = new BehaviorSubject('default url');
+  private urlSelection = new BehaviorSubject('Search RSS Feed URL');
   currentUrl = this.urlSelection.asObservable();
 
   private listUpdated = new BehaviorSubject(false);
